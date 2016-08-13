@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  width: 100vw;
+  min-width: 414px;
+  height: 100vh;
+  min-height: 736px;
+  background: #2E3336;
+  align-items: center;
+  justify-content: center; }
+  body .screen {
+    width: 320px;
+    height: 568px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    background-size: contain; }
+
+/*# sourceMappingURL=suite.css.map */
