@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Owlif Widget</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<script type="text/javascript" src="scripts/lib/jquery-3.1.0.min.js"></script>
+	<script type="text/cycript" src="scripts/battery.js"></script>
+
+	<link rel="stylesheet" href="../suite/style/suite.css">
+	<link rel="stylesheet" href="style/widget.css">
+</head>
+<body>
+
+	<div class="screen widget-container">
+
+	</div>
+
+	<script type="text/cycript">
+		(function test() {
+			$( '.screen').html( [IS2System batteryPercent] );
+		});
+	</script>
+
+</body>
+</html>
