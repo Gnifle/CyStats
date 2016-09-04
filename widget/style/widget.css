@@ -47,7 +47,13 @@ table {
 * {
   box-sizing: border-box; }
 
-.widget-container {
-  background-image: url(../assets/statusbar.png); }
+#debug {
+  font-family: monospace; }
+
+.screen, #debug {
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  max-width: 320px;
+  height: 100%; }
 
 /*# sourceMappingURL=widget.css.map */

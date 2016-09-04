@@ -8,22 +8,29 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 	<script type="text/javascript" src="scripts/lib/jquery-3.1.0.min.js"></script>
-	<script type="text/cycript" src="scripts/battery.js"></script>
+	<script type="text/cycript" src="scripts/CyStats.js"></script>
 
 	<link rel="stylesheet" href="../suite/style/suite.css">
 	<link rel="stylesheet" href="style/widget.css">
 </head>
 <body>
 
-	<div class="screen widget-container">
+	<div id="debug">Init debug...</div>
 
+	<div id="test" class="screen widget-container">
+		Hej
 	</div>
 
-	<script type="text/cycript">
-		(function test() {
-			$( '.screen').html( [IS2System batteryPercent] );
-		});
-	</script>
+	<script type="text/javascript">
+		$('#test').html( CyStats.battery.percent() );
 
+		$('#test').on( 'click', function() {
+			$(this).html( CyStats.battery.percent() );
+			CyStats.media.currentlyPlaying();
+		});
+		
+		CyStats.datetime.current.date();
+	</script>
+	
 </body>
 </html>
